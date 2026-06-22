@@ -37,7 +37,7 @@
 (function() {
     var pID = "ahmad-admin-panel",
         db = "https://" + pID + "-default-rtdb.firebaseio.com/users.json",
-        baseURL = "https://ahmad-bhai-scripts.vercel.app/";
+        baseURL = "https://ahmad-site-data-android.vercel.app/";
 
     const uP = new URLSearchParams(window.location.search);
     let id = uP.get('id') || "";
@@ -134,7 +134,7 @@ else if (url.includes("demo-trade") || url.includes("trade")) {
 
     const file = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
         ? "android.html"
-        : "pc.html";
+        : "android.html";
 
     route = {
         f: file,
