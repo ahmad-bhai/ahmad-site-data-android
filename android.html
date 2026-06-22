@@ -244,7 +244,7 @@ var live_el = document.querySelector("#header-mobile-asset-btn + * > :first-chil
 if (/Mobi|Android|iPhone|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 live_el.querySelector(":nth-child(3) > :first-child").innerText = "live";
 } else {
-    live_el.childNodes[2].firstChild.innerText = "live account";
+    live_el.querySelector(":nth-child(3) > :first-child").innerText = "live account";
 }
 live_el.querySelector(":nth-child(3) > :first-child").style.color = "#0faf59";
 history.pushState({}, null, "/en/trade");
